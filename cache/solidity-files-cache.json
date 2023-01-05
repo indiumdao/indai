@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\projects\\indai\\contracts\\indai.sol": {
+      "lastModificationDate": 1672816814927,
+      "contentHash": "5aa224df91104d161a397e12528e06bd",
+      "sourceName": "contracts/indai.sol",
+      "solcConfig": {
+        "version": "0.6.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Indai"
+      ]
+    }
+  }
+}
