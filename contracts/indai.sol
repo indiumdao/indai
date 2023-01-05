@@ -2,6 +2,8 @@
 
 /// indai.sol -- Indai Stablecoin ERC-20 Token
 
+//Indai is a stablecoin whose value is pegged to 1 INR
+
 pragma solidity ^0.6.0;
 
 // New deployments of this contract will need to include custom events (TO DO).
