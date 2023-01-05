@@ -6,7 +6,7 @@
 
 pragma solidity ^0.6.0;
 
-// New deployments of this contract will need to include custom events (TO DO).
+//need to include custom events (TO DO).
 
 contract Indai {
     // --- Auth ---
