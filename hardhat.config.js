@@ -24,7 +24,18 @@ module.exports = {
       blockConfirmations: 6,
     },
   },
-  solidity: "0.6.12",
+
+  solidity: {
+    compilers: [
+      {
+        version: "0.6.12",
+      },
+      {
+        version: "0.4.15",
+      },
+    ],
+  },
+
   namedAccounts: {
     deployer: {
       default: 0,
