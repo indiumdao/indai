@@ -1,0 +1,78 @@
+{
+  "address": "0x1A94B34a6533c2452A78AEefD0005b04934DF03C",
+  "abi": [
+    {
+      "anonymous": true,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes4",
+          "name": "sig",
+          "type": "bytes4"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "arg1",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "arg2",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "LogNote",
+      "type": "event"
+    }
+  ],
+  "transactionHash": "0x7c91f2243be7e176d1b4f20c5349302ca8688606acd19b36a5adf9e530b1086c",
+  "receipt": {
+    "to": null,
+    "from": "0x76677d82Cba9d7F2BB40670456AbaD808778635c",
+    "contractAddress": "0x1A94B34a6533c2452A78AEefD0005b04934DF03C",
+    "transactionIndex": 21,
+    "gasUsed": "67066",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xdf9d615e65fe351c230f44601d0b2af8392478d1993fe59cc0bf79fb7e511e78",
+    "transactionHash": "0x7c91f2243be7e176d1b4f20c5349302ca8688606acd19b36a5adf9e530b1086c",
+    "logs": [],
+    "blockNumber": 8343464,
+    "cumulativeGasUsed": "2452881",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "e39a6e3d0449c2ca8993d0952a96d005",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":true,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes4\",\"name\":\"sig\",\"type\":\"bytes4\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"arg1\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"arg2\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"LogNote\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/cat.sol\":\"LibNote\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/cat.sol\":{\"content\":\"/**\\n *Submitted for verification at Etherscan.io on 2020-08-27\\n */\\n\\n/// cat.sol -- Dai liquidation module\\n\\n// Copyright (C) 2018 Rain <rainbreak@riseup.net>\\n//\\n// This program is free software: you can redistribute it and/or modify\\n// it under the terms of the GNU Affero General Public License as published by\\n// the Free Software Foundation, either version 3 of the License, or\\n// (at your option) any later version.\\n//\\n// This program is distributed in the hope that it will be useful,\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\n// GNU Affero General Public License for more details.\\n//\\n// You should have received a copy of the GNU Affero General Public License\\n// along with this program.  If not, see <https://www.gnu.org/licenses/>.\\n\\npragma solidity >=0.5.12;\\n\\ncontract LibNote {\\n    event LogNote(\\n        bytes4 indexed sig,\\n        address indexed usr,\\n        bytes32 indexed arg1,\\n        bytes32 indexed arg2,\\n        bytes data\\n    ) anonymous;\\n\\n    modifier note() {\\n        _;\\n        assembly {\\n            // log an 'anonymous' event with a constant 6 words of calldata\\n            // and four indexed topics: selector, caller, arg1 and arg2\\n            let mark := msize() // end of memory ensures zero\\n            mstore(0x40, add(mark, 288)) // update free memory pointer\\n            mstore(mark, 0x20) // bytes type data offset\\n            mstore(add(mark, 0x20), 224) // bytes size (padded)\\n            calldatacopy(add(mark, 0x40), 0, 224) // bytes payload\\n            log4(\\n                mark,\\n                288, // calldata\\n                shl(224, shr(224, calldataload(0))), // msg.sig\\n                caller(), // msg.sender\\n                calldataload(4), // arg1\\n                calldataload(36) // arg2\\n            )\\n        }\\n    }\\n}\\n\\ninterface Kicker {\\n    function kick(\\n        address urn,\\n        address gal,\\n        uint256 tab,\\n        uint256 lot,\\n        uint256 bid\\n    ) external returns (uint256);\\n}\\n\\ninterface VatLike {\\n    function ilks(\\n        bytes32\\n    )\\n        external\\n        view\\n        returns (\\n            uint256 Art, // [wad]\\n            uint256 rate, // [ray]\\n            uint256 spot, // [ray]\\n            uint256 line, // [rad]\\n            uint256 dust // [rad]\\n        );\\n\\n    function urns(\\n        bytes32,\\n        address\\n    )\\n        external\\n        view\\n        returns (\\n            uint256 ink, // [wad]\\n            uint256 art // [wad]\\n        );\\n\\n    function grab(bytes32, address, address, address, int256, int256) external;\\n\\n    function hope(address) external;\\n\\n    function nope(address) external;\\n}\\n\\ninterface VowLike {\\n    function fess(uint256) external;\\n}\\n\\ncontract Cat is LibNote {\\n    // --- Auth ---\\n    mapping(address => uint256) public wards;\\n\\n    function rely(address usr) external note auth {\\n        wards[usr] = 1;\\n    }\\n\\n    function deny(address usr) external note auth {\\n        wards[usr] = 0;\\n    }\\n\\n    modifier auth() {\\n        require(wards[msg.sender] == 1, \\\"Cat/not-authorized\\\");\\n        _;\\n    }\\n\\n    // --- Data ---\\n    struct Ilk {\\n        address flip; // Liquidator\\n        uint256 chop; // Liquidation Penalty  [wad]\\n        uint256 dunk; // Liquidation Quantity [rad]\\n    }\\n\\n    mapping(bytes32 => Ilk) public ilks;\\n\\n    uint256 public live; // Active Flag\\n    VatLike public vat; // CDP Engine\\n    VowLike public vow; // Debt Engine\\n    uint256 public box; // Max Dai out for liquidation        [rad]\\n    uint256 public litter; // Balance of Dai out for liquidation [rad]\\n\\n    // --- Events ---\\n    event Bite(\\n        bytes32 indexed ilk,\\n        address indexed urn,\\n        uint256 ink,\\n        uint256 art,\\n        uint256 tab,\\n        address flip,\\n        uint256 id\\n    );\\n\\n    // --- Init ---\\n    constructor(address vat_) public {\\n        wards[msg.sender] = 1;\\n        vat = VatLike(vat_);\\n        live = 1;\\n    }\\n\\n    // --- Math ---\\n    uint256 constant WAD = 10 ** 18;\\n\\n    function min(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        if (x > y) {\\n            z = y;\\n        } else {\\n            z = x;\\n        }\\n    }\\n\\n    function add(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require((z = x + y) >= x);\\n    }\\n\\n    function sub(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require((z = x - y) <= x);\\n    }\\n\\n    function mul(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require(y == 0 || (z = x * y) / y == x);\\n    }\\n\\n    // --- Administration ---\\n    function file(bytes32 what, address data) external note auth {\\n        if (what == \\\"vow\\\") vow = VowLike(data);\\n        else revert(\\\"Cat/file-unrecognized-param\\\");\\n    }\\n\\n    function file(bytes32 what, uint256 data) external note auth {\\n        if (what == \\\"box\\\") box = data;\\n        else revert(\\\"Cat/file-unrecognized-param\\\");\\n    }\\n\\n    function file(bytes32 ilk, bytes32 what, uint256 data) external note auth {\\n        if (what == \\\"chop\\\") ilks[ilk].chop = data;\\n        else if (what == \\\"dunk\\\") ilks[ilk].dunk = data;\\n        else revert(\\\"Cat/file-unrecognized-param\\\");\\n    }\\n\\n    function file(bytes32 ilk, bytes32 what, address flip) external note auth {\\n        if (what == \\\"flip\\\") {\\n            vat.nope(ilks[ilk].flip);\\n            ilks[ilk].flip = flip;\\n            vat.hope(flip);\\n        } else revert(\\\"Cat/file-unrecognized-param\\\");\\n    }\\n\\n    // --- CDP Liquidation ---\\n    function bite(bytes32 ilk, address urn) external returns (uint256 id) {\\n        (, uint256 rate, uint256 spot, , uint256 dust) = vat.ilks(ilk);\\n        (uint256 ink, uint256 art) = vat.urns(ilk, urn);\\n\\n        require(live == 1, \\\"Cat/not-live\\\");\\n        require(spot > 0 && mul(ink, spot) < mul(art, rate), \\\"Cat/not-unsafe\\\");\\n\\n        Ilk memory milk = ilks[ilk];\\n        uint256 dart;\\n        {\\n            uint256 room = sub(box, litter);\\n\\n            // test whether the remaining space in the litterbox is dusty\\n            require(litter < box && room >= dust, \\\"Cat/liquidation-limit-hit\\\");\\n\\n            dart = min(art, mul(min(milk.dunk, room), WAD) / rate / milk.chop);\\n        }\\n\\n        uint256 dink = min(ink, mul(ink, dart) / art);\\n\\n        require(dart > 0 && dink > 0, \\\"Cat/null-auction\\\");\\n        require(dart <= 2 ** 255 && dink <= 2 ** 255, \\\"Cat/overflow\\\");\\n\\n        // This may leave the CDP in a dusty state\\n        vat.grab(\\n            ilk,\\n            urn,\\n            address(this),\\n            address(vow),\\n            -int256(dink),\\n            -int256(dart)\\n        );\\n        vow.fess(mul(dart, rate));\\n\\n        {\\n            // Avoid stack too deep\\n            // This calcuation will overflow if dart*rate exceeds ~10^14,\\n            // i.e. the maximum dunk is roughly 100 trillion DAI.\\n            uint256 tab = mul(mul(dart, rate), milk.chop) / WAD;\\n            litter = add(litter, tab);\\n\\n            id = Kicker(milk.flip).kick({\\n                urn: urn,\\n                gal: address(vow),\\n                tab: tab,\\n                lot: dink,\\n                bid: 0\\n            });\\n        }\\n\\n        emit Bite(ilk, urn, dink, dart, mul(dart, rate), milk.flip, id);\\n    }\\n\\n    function claw(uint256 rad) external note auth {\\n        litter = sub(litter, rad);\\n    }\\n\\n    function cage() external note auth {\\n        live = 0;\\n    }\\n}\\n\",\"keccak256\":\"0xebd7c5774acbfc47f8ba6cc7aff237f1e5644b051ddbac7309944039f751f4eb\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212203592cf9918b4867a3a1776f942dac175b771dcd766b1e928bc312cb71636ff6364736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212203592cf9918b4867a3a1776f942dac175b771dcd766b1e928bc312cb71636ff6364736f6c634300060c0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

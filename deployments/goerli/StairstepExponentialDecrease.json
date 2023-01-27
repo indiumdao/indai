@@ -1,0 +1,261 @@
+{
+  "address": "0xb64723B5d46605d6f74F128037B4F87a9C739895",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "Deny",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "File",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "Rely",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "cut",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "deny",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "file",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "top",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "dur",
+          "type": "uint256"
+        }
+      ],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "rely",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "step",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "wards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x7d0500553b3c08c952d7da7e07174d8ee5fbe490e5144e4da6171b0b08b9519c",
+  "receipt": {
+    "to": null,
+    "from": "0x76677d82Cba9d7F2BB40670456AbaD808778635c",
+    "contractAddress": "0xb64723B5d46605d6f74F128037B4F87a9C739895",
+    "transactionIndex": 37,
+    "gasUsed": "544167",
+    "logsBloom": "0x00000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000400000400000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000002000000000000000000000000000000000000000000000020000000",
+    "blockHash": "0x2fd19b4654762e041680bca04d36da55a4cd0ec2c9a26f90f1c5ff6324abb83a",
+    "transactionHash": "0x7d0500553b3c08c952d7da7e07174d8ee5fbe490e5144e4da6171b0b08b9519c",
+    "logs": [
+      {
+        "transactionIndex": 37,
+        "blockNumber": 8343424,
+        "transactionHash": "0x7d0500553b3c08c952d7da7e07174d8ee5fbe490e5144e4da6171b0b08b9519c",
+        "address": "0xb64723B5d46605d6f74F128037B4F87a9C739895",
+        "topics": [
+          "0xdd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a60",
+          "0x00000000000000000000000076677d82cba9d7f2bb40670456abad808778635c"
+        ],
+        "data": "0x",
+        "logIndex": 94,
+        "blockHash": "0x2fd19b4654762e041680bca04d36da55a4cd0ec2c9a26f90f1c5ff6324abb83a"
+      }
+    ],
+    "blockNumber": 8343424,
+    "cumulativeGasUsed": "8303081",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "ed048294ed74b7abd11bdebd540fd1ff",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"Deny\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"File\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"Rely\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"cut\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"deny\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"file\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"top\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"dur\",\"type\":\"uint256\"}],\"name\":\"price\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"rely\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"step\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"wards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/abaci.sol\":\"StairstepExponentialDecrease\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/abaci.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\n/// abaci.sol -- price decrease functions for auctions\\n\\n// Copyright (C) 2020-2022 Dai Foundation\\n//\\n// This program is free software: you can redistribute it and/or modify\\n// it under the terms of the GNU Affero General Public License as published\\n// by the Free Software Foundation, either version 3 of the License, or\\n// (at your option) any later version.\\n//\\n// This program is distributed in the hope that it will be useful,\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\n// GNU Affero General Public License for more details.\\n//\\n// You should have received a copy of the GNU Affero General Public License\\n// along with this program.  If not, see <https://www.gnu.org/licenses/>.\\n\\npragma solidity ^0.6.12;\\n\\ninterface Abacus {\\n    // 1st arg: initial price               [ray]\\n    // 2nd arg: seconds since auction start [seconds]\\n    // returns: current auction price       [ray]\\n    function price(uint256, uint256) external view returns (uint256);\\n}\\n\\ncontract LinearDecrease is Abacus {\\n\\n    // --- Auth ---\\n    mapping (address => uint256) public wards;\\n    function rely(address usr) external auth { wards[usr] = 1; emit Rely(usr); }\\n    function deny(address usr) external auth { wards[usr] = 0; emit Deny(usr); }\\n    modifier auth {\\n        require(wards[msg.sender] == 1, \\\"LinearDecrease/not-authorized\\\");\\n        _;\\n    }\\n\\n    // --- Data ---\\n    uint256 public tau;  // Seconds after auction start when the price reaches zero [seconds]\\n\\n    // --- Events ---\\n    event Rely(address indexed usr);\\n    event Deny(address indexed usr);\\n\\n    event File(bytes32 indexed what, uint256 data);\\n\\n    // --- Init ---\\n    constructor() public {\\n        wards[msg.sender] = 1;\\n        emit Rely(msg.sender);\\n    }\\n\\n    // --- Administration ---\\n    function file(bytes32 what, uint256 data) external auth {\\n        if (what ==  \\\"tau\\\") tau = data;\\n        else revert(\\\"LinearDecrease/file-unrecognized-param\\\");\\n        emit File(what, data);\\n    }\\n\\n    // --- Math ---\\n    uint256 constant RAY = 10 ** 27;\\n    function add(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require((z = x + y) >= x);\\n    }\\n    function mul(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require(y == 0 || (z = x * y) / y == x);\\n    }\\n    function rmul(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        z = x * y;\\n        require(y == 0 || z / y == x);\\n        z = z / RAY;\\n    }\\n\\n    // Price calculation when price is decreased linearly in proportion to time:\\n    // tau: The number of seconds after the start of the auction where the price will hit 0\\n    // top: Initial price\\n    // dur: current seconds since the start of the auction\\n    //\\n    // Returns y = top * ((tau - dur) / tau)\\n    //\\n    // Note the internal call to mul multiples by RAY, thereby ensuring that the rmul calculation\\n    // which utilizes top and tau (RAY values) is also a RAY value.\\n    function price(uint256 top, uint256 dur) override external view returns (uint256) {\\n        if (dur >= tau) return 0;\\n        return rmul(top, mul(tau - dur, RAY) / tau);\\n    }\\n}\\n\\ncontract StairstepExponentialDecrease is Abacus {\\n\\n    // --- Auth ---\\n    mapping (address => uint256) public wards;\\n    function rely(address usr) external auth { wards[usr] = 1; emit Rely(usr); }\\n    function deny(address usr) external auth { wards[usr] = 0; emit Deny(usr); }\\n    modifier auth {\\n        require(wards[msg.sender] == 1, \\\"StairstepExponentialDecrease/not-authorized\\\");\\n        _;\\n    }\\n\\n    // --- Data ---\\n    uint256 public step; // Length of time between price drops [seconds]\\n    uint256 public cut;  // Per-step multiplicative factor     [ray]\\n\\n    // --- Events ---\\n    event Rely(address indexed usr);\\n    event Deny(address indexed usr);\\n\\n    event File(bytes32 indexed what, uint256 data);\\n\\n    // --- Init ---\\n    // @notice: `cut` and `step` values must be correctly set for\\n    //     this contract to return a valid price\\n    constructor() public {\\n        wards[msg.sender] = 1;\\n        emit Rely(msg.sender);\\n    }\\n\\n    // --- Administration ---\\n    function file(bytes32 what, uint256 data) external auth {\\n        if      (what ==  \\\"cut\\\") require((cut = data) <= RAY, \\\"StairstepExponentialDecrease/cut-gt-RAY\\\");\\n        else if (what == \\\"step\\\") step = data;\\n        else revert(\\\"StairstepExponentialDecrease/file-unrecognized-param\\\");\\n        emit File(what, data);\\n    }\\n\\n    // --- Math ---\\n    uint256 constant RAY = 10 ** 27;\\n    function rmul(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        z = x * y;\\n        require(y == 0 || z / y == x);\\n        z = z / RAY;\\n    }\\n    // optimized version from dss PR #78\\n    function rpow(uint256 x, uint256 n, uint256 b) internal pure returns (uint256 z) {\\n        assembly {\\n            switch n case 0 { z := b }\\n            default {\\n                switch x case 0 { z := 0 }\\n                default {\\n                    switch mod(n, 2) case 0 { z := b } default { z := x }\\n                    let half := div(b, 2)  // for rounding.\\n                    for { n := div(n, 2) } n { n := div(n,2) } {\\n                        let xx := mul(x, x)\\n                        if shr(128, x) { revert(0,0) }\\n                        let xxRound := add(xx, half)\\n                        if lt(xxRound, xx) { revert(0,0) }\\n                        x := div(xxRound, b)\\n                        if mod(n,2) {\\n                            let zx := mul(z, x)\\n                            if and(iszero(iszero(x)), iszero(eq(div(zx, x), z))) { revert(0,0) }\\n                            let zxRound := add(zx, half)\\n                            if lt(zxRound, zx) { revert(0,0) }\\n                            z := div(zxRound, b)\\n                        }\\n                    }\\n                }\\n            }\\n        }\\n    }\\n\\n    // top: initial price\\n    // dur: seconds since the auction has started\\n    // step: seconds between a price drop\\n    // cut: cut encodes the percentage to decrease per step.\\n    //   For efficiency, the values is set as (1 - (% value / 100)) * RAY\\n    //   So, for a 1% decrease per step, cut would be (1 - 0.01) * RAY\\n    //\\n    // returns: top * (cut ^ dur)\\n    //\\n    //\\n    function price(uint256 top, uint256 dur) override external view returns (uint256) {\\n        return rmul(top, rpow(cut, dur / step, RAY));\\n    }\\n}\\n\\n// While an equivalent function can be obtained by setting step = 1 in StairstepExponentialDecrease,\\n// this continous (i.e. per-second) exponential decrease has be implemented as it is more gas-efficient\\n// than using the stairstep version with step = 1 (primarily due to 1 fewer SLOAD per price calculation).\\ncontract ExponentialDecrease is Abacus {\\n\\n    // --- Auth ---\\n    mapping (address => uint256) public wards;\\n    function rely(address usr) external auth { wards[usr] = 1; emit Rely(usr); }\\n    function deny(address usr) external auth { wards[usr] = 0; emit Deny(usr); }\\n    modifier auth {\\n        require(wards[msg.sender] == 1, \\\"ExponentialDecrease/not-authorized\\\");\\n        _;\\n    }\\n\\n    // --- Data ---\\n    uint256 public cut;  // Per-second multiplicative factor [ray]\\n\\n    // --- Events ---\\n    event Rely(address indexed usr);\\n    event Deny(address indexed usr);\\n\\n    event File(bytes32 indexed what, uint256 data);\\n\\n    // --- Init ---\\n    // @notice: `cut` value must be correctly set for\\n    //     this contract to return a valid price\\n    constructor() public {\\n        wards[msg.sender] = 1;\\n        emit Rely(msg.sender);\\n    }\\n\\n    // --- Administration ---\\n    function file(bytes32 what, uint256 data) external auth {\\n        if      (what ==  \\\"cut\\\") require((cut = data) <= RAY, \\\"ExponentialDecrease/cut-gt-RAY\\\");\\n        else revert(\\\"ExponentialDecrease/file-unrecognized-param\\\");\\n        emit File(what, data);\\n    }\\n\\n    // --- Math ---\\n    uint256 constant RAY = 10 ** 27;\\n    function rmul(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        z = x * y;\\n        require(y == 0 || z / y == x);\\n        z = z / RAY;\\n    }\\n    // optimized version from dss PR #78\\n    function rpow(uint256 x, uint256 n, uint256 b) internal pure returns (uint256 z) {\\n        assembly {\\n            switch n case 0 { z := b }\\n            default {\\n                switch x case 0 { z := 0 }\\n                default {\\n                    switch mod(n, 2) case 0 { z := b } default { z := x }\\n                    let half := div(b, 2)  // for rounding.\\n                    for { n := div(n, 2) } n { n := div(n,2) } {\\n                        let xx := mul(x, x)\\n                        if shr(128, x) { revert(0,0) }\\n                        let xxRound := add(xx, half)\\n                        if lt(xxRound, xx) { revert(0,0) }\\n                        x := div(xxRound, b)\\n                        if mod(n,2) {\\n                            let zx := mul(z, x)\\n                            if and(iszero(iszero(x)), iszero(eq(div(zx, x), z))) { revert(0,0) }\\n                            let zxRound := add(zx, half)\\n                            if lt(zxRound, zx) { revert(0,0) }\\n                            z := div(zxRound, b)\\n                        }\\n                    }\\n                }\\n            }\\n        }\\n    }\\n\\n    // top: initial price\\n    // dur: seconds since the auction has started\\n    // cut: cut encodes the percentage to decrease per second.\\n    //   For efficiency, the values is set as (1 - (% value / 100)) * RAY\\n    //   So, for a 1% decrease per second, cut would be (1 - 0.01) * RAY\\n    //\\n    // returns: top * (cut ^ dur)\\n    //\\n    function price(uint256 top, uint256 dur) override external view returns (uint256) {\\n        return rmul(top, rpow(cut, dur, RAY));\\n    }\\n}\\n\",\"keccak256\":\"0xc115e4d36fc94bcf92474a560a9e38ae1d7f9985751dbf37b183f418b9e82db3\",\"license\":\"AGPL-3.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff167fdd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a6060405160405180910390a2610876806100a76000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c80639c52a7f11161005b5780639c52a7f11461014a578063bf353dbb1461018e578063e25fe175146101e6578063e6fd604c146102045761007d565b806329ae811414610082578063487a2395146100ba57806365fae35e14610106575b600080fd5b6100b86004803603604081101561009857600080fd5b810190808035906020019092919080359060200190929190505050610222565b005b6100f0600480360360408110156100d057600080fd5b810190808035906020019092919080359060200190929190505050610412565b6040518082815260200191505060405180910390f35b6101486004803603602081101561011c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610449565b005b61018c6004803603602081101561016057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061056a565b005b6101d0600480360360208110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061068b565b6040518082815260200191505060405180910390f35b6101ee6106a3565b6040518082815260200191505060405180910390f35b61020c6106a9565b6040518082815260200191505060405180910390f35b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054146102b9576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806107bb602b913960400191505060405180910390fd5b7f6375740000000000000000000000000000000000000000000000000000000000821415610350576b033b2e3c9fd0803ce8000000816002819055111561034b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260278152602001806107e66027913960400191505060405180910390fd5b6103d6565b7f737465700000000000000000000000000000000000000000000000000000000082141561038457806001819055506103d5565b6040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603481526020018061080d6034913960400191505060405180910390fd5b5b817fe986e40cc8c151830d4f61050f4fb2e4add8567caad2d5f5496f9158e91fe4c7826040518082815260200191505060405180910390a25050565b60006104418361043c600254600154868161042957fe5b046b033b2e3c9fd0803ce80000006106af565b610775565b905092915050565b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054146104e0576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806107bb602b913960400191505060405180910390fd5b60016000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508073ffffffffffffffffffffffffffffffffffffffff167fdd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a6060405160405180910390a250565b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205414610601576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806107bb602b913960400191505060405180910390fd5b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508073ffffffffffffffffffffffffffffffffffffffff167f184450df2e323acec0ed3b5c7531b81f9b4cdef7914dfd4c0a4317416bb5251b60405160405180910390a250565b60006020528060005260406000206000915090505481565b60015481565b60025481565b6000826000811461076957846000811461075e5760028506600081146106d7578693506106db565b8493505b50600284046002860495505b8515610758578687028760801c156106fe57600080fd5b8181018181101561070e57600080fd5b8681049850600288061561074b57888602868a820414158a1515161561073357600080fd5b8381018181101561074357600080fd5b888104975050505b50506002860495506106e7565b50610763565b600092505b5061076d565b8291505b509392505050565b60008183029050600082148061079357508282828161079057fe5b04145b61079c57600080fd5b6b033b2e3c9fd0803ce800000081816107b157fe5b0490509291505056fe5374616972737465704578706f6e656e7469616c44656372656173652f6e6f742d617574686f72697a65645374616972737465704578706f6e656e7469616c44656372656173652f6375742d67742d5241595374616972737465704578706f6e656e7469616c44656372656173652f66696c652d756e7265636f676e697a65642d706172616da264697066735822122050bb9e719cfaaedf4ceff6ac9bf40dadcb4c1517bc92ae6f13ec5a3962df289764736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c80639c52a7f11161005b5780639c52a7f11461014a578063bf353dbb1461018e578063e25fe175146101e6578063e6fd604c146102045761007d565b806329ae811414610082578063487a2395146100ba57806365fae35e14610106575b600080fd5b6100b86004803603604081101561009857600080fd5b810190808035906020019092919080359060200190929190505050610222565b005b6100f0600480360360408110156100d057600080fd5b810190808035906020019092919080359060200190929190505050610412565b6040518082815260200191505060405180910390f35b6101486004803603602081101561011c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610449565b005b61018c6004803603602081101561016057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061056a565b005b6101d0600480360360208110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061068b565b6040518082815260200191505060405180910390f35b6101ee6106a3565b6040518082815260200191505060405180910390f35b61020c6106a9565b6040518082815260200191505060405180910390f35b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054146102b9576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806107bb602b913960400191505060405180910390fd5b7f6375740000000000000000000000000000000000000000000000000000000000821415610350576b033b2e3c9fd0803ce8000000816002819055111561034b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260278152602001806107e66027913960400191505060405180910390fd5b6103d6565b7f737465700000000000000000000000000000000000000000000000000000000082141561038457806001819055506103d5565b6040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603481526020018061080d6034913960400191505060405180910390fd5b5b817fe986e40cc8c151830d4f61050f4fb2e4add8567caad2d5f5496f9158e91fe4c7826040518082815260200191505060405180910390a25050565b60006104418361043c600254600154868161042957fe5b046b033b2e3c9fd0803ce80000006106af565b610775565b905092915050565b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054146104e0576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806107bb602b913960400191505060405180910390fd5b60016000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508073ffffffffffffffffffffffffffffffffffffffff167fdd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a6060405160405180910390a250565b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205414610601576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806107bb602b913960400191505060405180910390fd5b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508073ffffffffffffffffffffffffffffffffffffffff167f184450df2e323acec0ed3b5c7531b81f9b4cdef7914dfd4c0a4317416bb5251b60405160405180910390a250565b60006020528060005260406000206000915090505481565b60015481565b60025481565b6000826000811461076957846000811461075e5760028506600081146106d7578693506106db565b8493505b50600284046002860495505b8515610758578687028760801c156106fe57600080fd5b8181018181101561070e57600080fd5b8681049850600288061561074b57888602868a820414158a1515161561073357600080fd5b8381018181101561074357600080fd5b888104975050505b50506002860495506106e7565b50610763565b600092505b5061076d565b8291505b509392505050565b60008183029050600082148061079357508282828161079057fe5b04145b61079c57600080fd5b6b033b2e3c9fd0803ce800000081816107b157fe5b0490509291505056fe5374616972737465704578706f6e656e7469616c44656372656173652f6e6f742d617574686f72697a65645374616972737465704578706f6e656e7469616c44656372656173652f6375742d67742d5241595374616972737465704578706f6e656e7469616c44656372656173652f66696c652d756e7265636f676e697a65642d706172616da264697066735822122050bb9e719cfaaedf4ceff6ac9bf40dadcb4c1517bc92ae6f13ec5a3962df289764736f6c634300060c0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 249,
+        "contract": "contracts/abaci.sol:StairstepExponentialDecrease",
+        "label": "wards",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 301,
+        "contract": "contracts/abaci.sol:StairstepExponentialDecrease",
+        "label": "step",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 303,
+        "contract": "contracts/abaci.sol:StairstepExponentialDecrease",
+        "label": "cut",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
