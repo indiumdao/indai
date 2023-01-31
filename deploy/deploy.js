@@ -95,6 +95,62 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     waitConfirmations: network.config.blockConfirmations,
   });
 
+  const gem1 = await deploy("DSAuthority", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem2 = await deploy("DSAuthEvents", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem3 = await deploy("DSAuth", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem4 = await deploy("DSMath", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem5 = await deploy("DSNote", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem6 = await deploy("DSThing", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem7 = await deploy("DSStop", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem8 = await deploy("ERC20", {
+    from: deployer,
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
   const flap = await deploy("Flapper", {
     from: deployer,
     args: ["0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C", ""],
