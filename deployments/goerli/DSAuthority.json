@@ -1,0 +1,60 @@
+{
+  "address": "0xdCa66Cfbe9b32AF3dB1471377e637950cDcc3927",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "src",
+          "type": "address"
+        },
+        {
+          "name": "dst",
+          "type": "address"
+        },
+        {
+          "name": "sig",
+          "type": "bytes4"
+        }
+      ],
+      "name": "canCall",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xfe4d23ebe93743a748dd2903b2d99bbccd3edb3e6f35c793a0f3ced4a2ec2d8c",
+  "receipt": {
+    "to": null,
+    "from": "0x76677d82Cba9d7F2BB40670456AbaD808778635c",
+    "contractAddress": "0xdCa66Cfbe9b32AF3dB1471377e637950cDcc3927",
+    "transactionIndex": 69,
+    "gasUsed": "53000",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xfde566a0c37c05d142c427cf6b2f7cb5deaf478c626072482ecff23df2681a85",
+    "transactionHash": "0xfe4d23ebe93743a748dd2903b2d99bbccd3edb3e6f35c793a0f3ced4a2ec2d8c",
+    "logs": [],
+    "blockNumber": 8589903,
+    "cumulativeGasUsed": "8548012",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "b67e9782981c625618913247167bc512",
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

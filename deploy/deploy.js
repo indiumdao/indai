@@ -95,7 +95,28 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     waitConfirmations: network.config.blockConfirmations,
   });
 
-  const gem1 = await deploy("DSAuthority", {
+  const flap = await deploy("Flapper", {
+    from: deployer,
+    args: [
+      "0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C",
+      "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+    ],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const flip = await deploy("Flipper", {
+    from: deployer,
+    args: [
+      "0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C",
+      "0x1129068e407259f6b6F4baDb8DECb835953e8e13",
+      "0x4554482d41000000000000000000000000000000000000000000000000000000",
+    ],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem = await deploy("DSAuthority", {
     from: deployer,
     args: [],
     log: true,
@@ -151,9 +172,16 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     waitConfirmations: network.config.blockConfirmations,
   });
 
-  const flap = await deploy("Flapper", {
+  const gem9 = await deploy("DSTokenBase", {
     from: deployer,
-    args: ["0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C", ""],
+    args: [],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const gem10 = await deploy("DSToken", {
+    from: deployer,
+    args: [],
     log: true,
     waitConfirmations: network.config.blockConfirmations,
   });
