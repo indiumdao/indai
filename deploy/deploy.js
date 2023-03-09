@@ -174,14 +174,74 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
   const gem9 = await deploy("DSTokenBase", {
     from: deployer,
-    args: [],
+    args: [
+      "0x4d4b520000000000000000000000000000000000000000000000000000000000",
+    ],
     log: true,
     waitConfirmations: network.config.blockConfirmations,
   });
 
   const gem10 = await deploy("DSToken", {
     from: deployer,
-    args: [],
+    args: [
+      "0x4d4b520000000000000000000000000000000000000000000000000000000000",
+    ],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const flop = await deploy("Flopper", {
+    from: deployer,
+    args: [
+      "0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C",
+      "0xdafE49Dbe2C36A72B30EdA50243651025074a385",
+    ],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const join = await deploy("GemJoin", {
+    from: deployer,
+    args: [
+      "0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C",
+      "0x4241542d41000000000000000000000000000000000000000000000000000000",
+      "0xdafE49Dbe2C36A72B30EdA50243651025074a385",
+    ],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const join1 = await deploy("DaiJoin", {
+    from: deployer,
+    args: [
+      "0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C",
+      "0x74aa9127b617000bCFC131275b8fb3b37F910f0B",
+    ],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const jug = await deploy("Jug", {
+    from: deployer,
+    args: ["0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C"],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const pot = await deploy("Pot", {
+    from: deployer,
+    args: ["0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C"],
+    log: true,
+    waitConfirmations: network.config.blockConfirmations,
+  });
+
+  const vow = await deploy("Vow", {
+    from: deployer,
+    args: [
+      "0x310DBaaB8ddE911C229821A997ff8B3b1D37aE1C",
+      "0xe1aF37c49eD52fC240C8461D5809802c436b8fDA",
+      "0x9ab02CEF2f24940D3dD444369F0EC33821D64830",
+    ],
     log: true,
     waitConfirmations: network.config.blockConfirmations,
   });

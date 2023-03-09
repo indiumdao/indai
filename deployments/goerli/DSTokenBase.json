@@ -1,0 +1,219 @@
+{
+  "address": "0xD90941a6817f571E02B15DD67fEE37505d039194",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "guy",
+          "type": "address"
+        },
+        {
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "src",
+          "type": "address"
+        },
+        {
+          "name": "dst",
+          "type": "address"
+        },
+        {
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "src",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "dst",
+          "type": "address"
+        },
+        {
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "src",
+          "type": "address"
+        },
+        {
+          "name": "guy",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "supply",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    }
+  ],
+  "transactionHash": "0x298427955ed151d8a1cdf59d6dd4d2f38afa3ec153db1cf364a1d164e8cc8714",
+  "receipt": {
+    "to": null,
+    "from": "0x76677d82Cba9d7F2BB40670456AbaD808778635c",
+    "contractAddress": "0xD90941a6817f571E02B15DD67fEE37505d039194",
+    "transactionIndex": 9,
+    "gasUsed": "518049",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xdc528f176438d859edcabe57d25ab97c56dd770276eae9f6b159e8b43a51d460",
+    "transactionHash": "0x298427955ed151d8a1cdf59d6dd4d2f38afa3ec153db1cf364a1d164e8cc8714",
+    "logs": [],
+    "blockNumber": 8617705,
+    "cumulativeGasUsed": "1803622",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x4d4b520000000000000000000000000000000000000000000000000000000000"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "b67e9782981c625618913247167bc512",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.17+commit.bdeb9e52\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"guy\",\"type\":\"address\"},{\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"src\",\"type\":\"address\"},{\"name\":\"dst\",\"type\":\"address\"},{\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"src\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"dst\",\"type\":\"address\"},{\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"src\",\"type\":\"address\"},{\"name\":\"guy\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"supply\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/external contracts/gem.sol\":\"DSTokenBase\"},\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/external contracts/gem.sol\":{\"content\":\"/**\\r\\n *Submitted for verification at Etherscan.io on 2017-11-25\\r\\n */\\r\\n\\r\\n// MKR Token\\r\\n\\r\\n// hevm: flattened sources of src/mkr-499.sol\\r\\npragma solidity ^0.4.17;\\r\\n\\r\\n////// lib/ds-roles/lib/ds-auth/src/auth.sol\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\ncontract DSAuthority {\\r\\n    function canCall(\\r\\n        address src,\\r\\n        address dst,\\r\\n        bytes4 sig\\r\\n    ) public view returns (bool);\\r\\n}\\r\\n\\r\\ncontract DSAuthEvents {\\r\\n    event LogSetAuthority(address indexed authority);\\r\\n    event LogSetOwner(address indexed owner);\\r\\n}\\r\\n\\r\\ncontract DSAuth is DSAuthEvents {\\r\\n    DSAuthority public authority;\\r\\n    address public owner;\\r\\n\\r\\n    function DSAuth() public {\\r\\n        owner = msg.sender;\\r\\n        LogSetOwner(msg.sender);\\r\\n    }\\r\\n\\r\\n    function setOwner(address owner_) public auth {\\r\\n        owner = owner_;\\r\\n        LogSetOwner(owner);\\r\\n    }\\r\\n\\r\\n    function setAuthority(DSAuthority authority_) public auth {\\r\\n        authority = authority_;\\r\\n        LogSetAuthority(authority);\\r\\n    }\\r\\n\\r\\n    modifier auth() {\\r\\n        require(isAuthorized(msg.sender, msg.sig));\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    function isAuthorized(\\r\\n        address src,\\r\\n        bytes4 sig\\r\\n    ) internal view returns (bool) {\\r\\n        if (src == address(this)) {\\r\\n            return true;\\r\\n        } else if (src == owner) {\\r\\n            return true;\\r\\n        } else if (authority == DSAuthority(0)) {\\r\\n            return false;\\r\\n        } else {\\r\\n            return authority.canCall(src, this, sig);\\r\\n        }\\r\\n    }\\r\\n}\\r\\n\\r\\n////// lib/ds-thing/lib/ds-math/src/math.sol\\r\\n/// math.sol -- mixin for inline numerical wizardry\\r\\n\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\ncontract DSMath {\\r\\n    function add(uint x, uint y) internal pure returns (uint z) {\\r\\n        require((z = x + y) >= x);\\r\\n    }\\r\\n\\r\\n    function sub(uint x, uint y) internal pure returns (uint z) {\\r\\n        require((z = x - y) <= x);\\r\\n    }\\r\\n\\r\\n    function mul(uint x, uint y) internal pure returns (uint z) {\\r\\n        require(y == 0 || (z = x * y) / y == x);\\r\\n    }\\r\\n\\r\\n    function min(uint x, uint y) internal pure returns (uint z) {\\r\\n        return x <= y ? x : y;\\r\\n    }\\r\\n\\r\\n    function max(uint x, uint y) internal pure returns (uint z) {\\r\\n        return x >= y ? x : y;\\r\\n    }\\r\\n\\r\\n    function imin(int x, int y) internal pure returns (int z) {\\r\\n        return x <= y ? x : y;\\r\\n    }\\r\\n\\r\\n    function imax(int x, int y) internal pure returns (int z) {\\r\\n        return x >= y ? x : y;\\r\\n    }\\r\\n\\r\\n    uint constant WAD = 10 ** 18;\\r\\n    uint constant RAY = 10 ** 27;\\r\\n\\r\\n    function wmul(uint x, uint y) internal pure returns (uint z) {\\r\\n        z = add(mul(x, y), WAD / 2) / WAD;\\r\\n    }\\r\\n\\r\\n    function rmul(uint x, uint y) internal pure returns (uint z) {\\r\\n        z = add(mul(x, y), RAY / 2) / RAY;\\r\\n    }\\r\\n\\r\\n    function wdiv(uint x, uint y) internal pure returns (uint z) {\\r\\n        z = add(mul(x, WAD), y / 2) / y;\\r\\n    }\\r\\n\\r\\n    function rdiv(uint x, uint y) internal pure returns (uint z) {\\r\\n        z = add(mul(x, RAY), y / 2) / y;\\r\\n    }\\r\\n\\r\\n    // This famous algorithm is called \\\"exponentiation by squaring\\\"\\r\\n    // and calculates x^n with x as fixed-point and n as regular unsigned.\\r\\n    //\\r\\n    // It's O(log n), instead of O(n) for naive repeated multiplication.\\r\\n    //\\r\\n    // These facts are why it works:\\r\\n    //\\r\\n    //  If n is even, then x^n = (x^2)^(n/2).\\r\\n    //  If n is odd,  then x^n = x * x^(n-1),\\r\\n    //   and applying the equation for even x gives\\r\\n    //    x^n = x * (x^2)^((n-1) / 2).\\r\\n    //\\r\\n    //  Also, EVM division is flooring and\\r\\n    //    floor[(n-1) / 2] = floor[n / 2].\\r\\n    //\\r\\n    function rpow(uint x, uint n) internal pure returns (uint z) {\\r\\n        z = n % 2 != 0 ? x : RAY;\\r\\n\\r\\n        for (n /= 2; n != 0; n /= 2) {\\r\\n            x = rmul(x, x);\\r\\n\\r\\n            if (n % 2 != 0) {\\r\\n                z = rmul(z, x);\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n}\\r\\n\\r\\n////// lib/ds-thing/lib/ds-note/src/note.sol\\r\\n/// note.sol -- the `note' modifier, for logging calls as events\\r\\n\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\ncontract DSNote {\\r\\n    event LogNote(\\r\\n        bytes4 indexed sig,\\r\\n        address indexed guy,\\r\\n        bytes32 indexed foo,\\r\\n        bytes32 indexed bar,\\r\\n        uint wad,\\r\\n        bytes fax\\r\\n    ) anonymous;\\r\\n\\r\\n    modifier note() {\\r\\n        bytes32 foo;\\r\\n        bytes32 bar;\\r\\n\\r\\n        assembly {\\r\\n            foo := calldataload(4)\\r\\n            bar := calldataload(36)\\r\\n        }\\r\\n\\r\\n        LogNote(msg.sig, msg.sender, foo, bar, msg.value, msg.data);\\r\\n\\r\\n        _;\\r\\n    }\\r\\n}\\r\\n\\r\\n////// lib/ds-thing/src/thing.sol\\r\\n// thing.sol - `auth` with handy mixins. your things should be DSThings\\r\\n\\r\\n// Copyright (C) 2017  DappHub, LLC\\r\\n\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\n/* import 'ds-auth/auth.sol'; */\\r\\n/* import 'ds-note/note.sol'; */\\r\\n/* import 'ds-math/math.sol'; */\\r\\n\\r\\ncontract DSThing is DSAuth, DSNote, DSMath {\\r\\n\\r\\n}\\r\\n\\r\\n////// lib/ds-token/lib/ds-stop/src/stop.sol\\r\\n/// stop.sol -- mixin for enable/disable functionality\\r\\n\\r\\n// Copyright (C) 2017  DappHub, LLC\\r\\n\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\n/* import \\\"ds-auth/auth.sol\\\"; */\\r\\n/* import \\\"ds-note/note.sol\\\"; */\\r\\n\\r\\ncontract DSStop is DSNote, DSAuth {\\r\\n    bool public stopped;\\r\\n\\r\\n    modifier stoppable() {\\r\\n        require(!stopped);\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    function stop() public auth note {\\r\\n        stopped = true;\\r\\n    }\\r\\n\\r\\n    function start() public auth note {\\r\\n        stopped = false;\\r\\n    }\\r\\n}\\r\\n\\r\\n////// lib/ds-token/lib/erc20/src/erc20.sol\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.8; */\\r\\n\\r\\n// Token standard API\\r\\n// https://github.com/ethereum/EIPs/issues/20\\r\\n\\r\\ncontract ERC20 {\\r\\n    function totalSupply() public view returns (uint supply);\\r\\n\\r\\n    function balanceOf(address who) public view returns (uint value);\\r\\n\\r\\n    function allowance(\\r\\n        address owner,\\r\\n        address spender\\r\\n    ) public view returns (uint _allowance);\\r\\n\\r\\n    function transfer(address to, uint value) public returns (bool ok);\\r\\n\\r\\n    function transferFrom(\\r\\n        address from,\\r\\n        address to,\\r\\n        uint value\\r\\n    ) public returns (bool ok);\\r\\n\\r\\n    function approve(address spender, uint value) public returns (bool ok);\\r\\n\\r\\n    event Transfer(address indexed from, address indexed to, uint value);\\r\\n    event Approval(address indexed owner, address indexed spender, uint value);\\r\\n}\\r\\n\\r\\n////// lib/ds-token/src/base.sol\\r\\n/// base.sol -- basic ERC20 implementation\\r\\n\\r\\n// Copyright (C) 2015, 2016, 2017  DappHub, LLC\\r\\n\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\n/* import \\\"erc20/erc20.sol\\\"; */\\r\\n/* import \\\"ds-math/math.sol\\\"; */\\r\\n\\r\\ncontract DSTokenBase is ERC20, DSMath {\\r\\n    uint256 _supply;\\r\\n    mapping(address => uint256) _balances;\\r\\n    mapping(address => mapping(address => uint256)) _approvals;\\r\\n\\r\\n    function DSTokenBase(uint supply) public {\\r\\n        _balances[msg.sender] = supply;\\r\\n        _supply = supply;\\r\\n    }\\r\\n\\r\\n    function totalSupply() public view returns (uint) {\\r\\n        return _supply;\\r\\n    }\\r\\n\\r\\n    function balanceOf(address src) public view returns (uint) {\\r\\n        return _balances[src];\\r\\n    }\\r\\n\\r\\n    function allowance(address src, address guy) public view returns (uint) {\\r\\n        return _approvals[src][guy];\\r\\n    }\\r\\n\\r\\n    function transfer(address dst, uint wad) public returns (bool) {\\r\\n        return transferFrom(msg.sender, dst, wad);\\r\\n    }\\r\\n\\r\\n    function transferFrom(\\r\\n        address src,\\r\\n        address dst,\\r\\n        uint wad\\r\\n    ) public returns (bool) {\\r\\n        if (src != msg.sender) {\\r\\n            _approvals[src][msg.sender] = sub(_approvals[src][msg.sender], wad);\\r\\n        }\\r\\n\\r\\n        _balances[src] = sub(_balances[src], wad);\\r\\n        _balances[dst] = add(_balances[dst], wad);\\r\\n\\r\\n        Transfer(src, dst, wad);\\r\\n\\r\\n        return true;\\r\\n    }\\r\\n\\r\\n    function approve(address guy, uint wad) public returns (bool) {\\r\\n        _approvals[msg.sender][guy] = wad;\\r\\n\\r\\n        Approval(msg.sender, guy, wad);\\r\\n\\r\\n        return true;\\r\\n    }\\r\\n}\\r\\n\\r\\n////// lib/ds-token/src/token.sol\\r\\n/// token.sol -- ERC20 implementation with minting and burning\\r\\n\\r\\n// Copyright (C) 2015, 2016, 2017  DappHub, LLC\\r\\n\\r\\n// This program is free software: you can redistribute it and/or modify\\r\\n// it under the terms of the GNU General Public License as published by\\r\\n// the Free Software Foundation, either version 3 of the License, or\\r\\n// (at your option) any later version.\\r\\n\\r\\n// This program is distributed in the hope that it will be useful,\\r\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\r\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\r\\n// GNU General Public License for more details.\\r\\n\\r\\n// You should have received a copy of the GNU General Public License\\r\\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.\\r\\n\\r\\n/* pragma solidity ^0.4.13; */\\r\\n\\r\\n/* import \\\"ds-stop/stop.sol\\\"; */\\r\\n\\r\\n/* import \\\"./base.sol\\\"; */\\r\\n\\r\\ncontract DSToken is DSTokenBase(0), DSStop {\\r\\n    bytes32 public symbol;\\r\\n    uint256 public decimals = 18; // standard token precision. override to customize\\r\\n\\r\\n    function DSToken(bytes32 symbol_) public {\\r\\n        symbol = symbol_;\\r\\n    }\\r\\n\\r\\n    event Mint(address indexed guy, uint wad);\\r\\n    event Burn(address indexed guy, uint wad);\\r\\n\\r\\n    function approve(address guy) public stoppable returns (bool) {\\r\\n        return super.approve(guy, uint(-1));\\r\\n    }\\r\\n\\r\\n    function approve(address guy, uint wad) public stoppable returns (bool) {\\r\\n        return super.approve(guy, wad);\\r\\n    }\\r\\n\\r\\n    function transferFrom(\\r\\n        address src,\\r\\n        address dst,\\r\\n        uint wad\\r\\n    ) public stoppable returns (bool) {\\r\\n        if (src != msg.sender && _approvals[src][msg.sender] != uint(-1)) {\\r\\n            _approvals[src][msg.sender] = sub(_approvals[src][msg.sender], wad);\\r\\n        }\\r\\n\\r\\n        _balances[src] = sub(_balances[src], wad);\\r\\n        _balances[dst] = add(_balances[dst], wad);\\r\\n\\r\\n        Transfer(src, dst, wad);\\r\\n\\r\\n        return true;\\r\\n    }\\r\\n\\r\\n    function push(address dst, uint wad) public {\\r\\n        transferFrom(msg.sender, dst, wad);\\r\\n    }\\r\\n\\r\\n    function pull(address src, uint wad) public {\\r\\n        transferFrom(src, msg.sender, wad);\\r\\n    }\\r\\n\\r\\n    function move(address src, address dst, uint wad) public {\\r\\n        transferFrom(src, dst, wad);\\r\\n    }\\r\\n\\r\\n    function mint(uint wad) public {\\r\\n        mint(msg.sender, wad);\\r\\n    }\\r\\n\\r\\n    function burn(uint wad) public {\\r\\n        burn(msg.sender, wad);\\r\\n    }\\r\\n\\r\\n    function mint(address guy, uint wad) public auth stoppable {\\r\\n        _balances[guy] = add(_balances[guy], wad);\\r\\n        _supply = add(_supply, wad);\\r\\n        Mint(guy, wad);\\r\\n    }\\r\\n\\r\\n    function burn(address guy, uint wad) public auth stoppable {\\r\\n        if (guy != msg.sender && _approvals[guy][msg.sender] != uint(-1)) {\\r\\n            _approvals[guy][msg.sender] = sub(_approvals[guy][msg.sender], wad);\\r\\n        }\\r\\n\\r\\n        _balances[guy] = sub(_balances[guy], wad);\\r\\n        _supply = sub(_supply, wad);\\r\\n        Burn(guy, wad);\\r\\n    }\\r\\n\\r\\n    // Optional token name\\r\\n    bytes32 public name = \\\"\\\";\\r\\n\\r\\n    function setName(bytes32 name_) public auth {\\r\\n        name = name_;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x6350ac77e45630327af443e4b2951f29cc6c6661c547d790a1537f98bd19e621\"}},\"version\":1}",
+  "bytecode": "0x6060604052341561000f57600080fd5b60405160208061081a8339810160405280805190602001909190505080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508060008190555050610794806100866000396000f30060606040523615610076576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063095ea7b31461007b57806318160ddd146100d557806323b872dd146100fe57806370a0823114610177578063a9059cbb146101c4578063dd62ed3e1461021e575b600080fd5b341561008657600080fd5b6100bb600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061028a565b604051808215151515815260200191505060405180910390f35b34156100e057600080fd5b6100e861037c565b6040518082815260200191505060405180910390f35b341561010957600080fd5b61015d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610385565b604051808215151515815260200191505060405180910390f35b341561018257600080fd5b6101ae600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061064b565b6040518082815260200191505060405180910390f35b34156101cf57600080fd5b610204600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610694565b604051808215151515815260200191505060405180910390f35b341561022957600080fd5b610274600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506106a9565b6040518082815260200191505060405180910390f35b600081600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040518082815260200191505060405180910390a36001905092915050565b60008054905090565b60003373ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff161415156104c357610442600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205483610730565b600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505b61050c600160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205483610730565b600160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610598600160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548361074c565b600160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190509392505050565b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60006106a1338484610385565b905092915050565b6000600260008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905092915050565b6000828284039150811115151561074657600080fd5b92915050565b6000828284019150811015151561076257600080fd5b929150505600a165627a7a72305820713be110c09da2d49200372f2e34d97626cb20032cbffc72cf45439e1f9a3c2b0029",
+  "deployedBytecode": "0x60606040523615610076576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063095ea7b31461007b57806318160ddd146100d557806323b872dd146100fe57806370a0823114610177578063a9059cbb146101c4578063dd62ed3e1461021e575b600080fd5b341561008657600080fd5b6100bb600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061028a565b604051808215151515815260200191505060405180910390f35b34156100e057600080fd5b6100e861037c565b6040518082815260200191505060405180910390f35b341561010957600080fd5b61015d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610385565b604051808215151515815260200191505060405180910390f35b341561018257600080fd5b6101ae600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061064b565b6040518082815260200191505060405180910390f35b34156101cf57600080fd5b610204600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610694565b604051808215151515815260200191505060405180910390f35b341561022957600080fd5b610274600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506106a9565b6040518082815260200191505060405180910390f35b600081600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040518082815260200191505060405180910390a36001905092915050565b60008054905090565b60003373ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff161415156104c357610442600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205483610730565b600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505b61050c600160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205483610730565b600160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610598600160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548361074c565b600160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190509392505050565b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60006106a1338484610385565b905092915050565b6000600260008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905092915050565b6000828284039150811115151561074657600080fd5b92915050565b6000828284019150811015151561076257600080fd5b929150505600a165627a7a72305820713be110c09da2d49200372f2e34d97626cb20032cbffc72cf45439e1f9a3c2b0029",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
